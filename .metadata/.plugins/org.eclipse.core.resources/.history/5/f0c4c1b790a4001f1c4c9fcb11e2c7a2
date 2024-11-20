@@ -1,0 +1,60 @@
+/* uart_receiver.cpp */
+#include "main.h"
+
+// UART handle declaration
+UART_HandleTypeDef huart2;
+
+// Function prototypes
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_UART2_Init(void);
+
+// Buffer for received data
+uint8_t rxBuffer[128];
+
+int main(void)
+{
+    // Initialize HAL
+    HAL_Init();
+
+    // Configure system clock
+    SystemClock_Config();
+
+    // Initialize peripherals
+    MX_GPIO_Init();
+    MX_UART2_Init();
+
+    while (1)
+    {
+        // Receive data (blocking mode)
+        HAL_StatusTypeDef status = HAL_UART_Receive(&huart2, rxBuffer, sizeof(rxBuffer)-1, HAL_MAX_DELAY);
+
+        if (status == HAL_OK)
+        {
+            // Add null terminator to make it a proper string
+            rxBuffer[sizeof(rxBuffer)-1] = '\0';
+
+            // Process received data here
+            // For example, toggle an LED to show data was received
+            HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);  // Assuming LED is on PA5 (like many STM32 boards)
+        }
+    }
+}
+
+// UART initialization
+static void MX_UART2_Init(void)
+{
+    huart2.Instance = USART2;
+    huart2.Init.BaudRate = 9600;
+    huart2.Init.WordLength = UART_WORDLENGTH_8B;
+    huart2.Init.StopBits = UART_STOPBITS_1;
+    huart2.Init.Parity = UART_PARITY_NONE;
+    huart2.Init.Mode = UART_MODE_RX;
+    huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+    huart2.Init.OverSampling = UART_OVERSAMPLING_16;
+
+    if (HAL_UART_Init(&huart2) != HAL_OK)
+    {
+        Error_Handler();
+    }
+}

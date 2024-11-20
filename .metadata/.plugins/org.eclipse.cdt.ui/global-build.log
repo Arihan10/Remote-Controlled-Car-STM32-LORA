@@ -1,0 +1,175 @@
+02:19:26 **** Incremental Build of configuration Debug for project RCBot_Receiver ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RCBot_Receiver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ariha\STM32CubeIDE\workspace_1.16.1\RCBot_Receiver\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RCBot_Receiver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RCBot_Receiver.elf
+ 
+arm-none-eabi-size  RCBot_Receiver.elf 
+arm-none-eabi-objdump -h -S RCBot_Receiver.elf  > "RCBot_Receiver.list"
+   text	   data	    bss	    dec	    hex	filename
+   9136	     32	   1736	  10904	   2a98	RCBot_Receiver.elf
+Finished building: default.size.stdout
+ 
+Finished building: RCBot_Receiver.list
+ 
+02:19:32 **** Incremental Build of configuration Debug for project RCBot ****
+make -j24 all 
+arm-none-eabi-size  RCBot.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9088	     32	   1736	  10856	   2a68	RCBot.elf
+Finished building: default.size.stdout
+ 
+02:19:46 **** Incremental Build of configuration Debug for project RCBot_Receiver ****
+make -j24 all 
+arm-none-eabi-size  RCBot_Receiver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9136	     32	   1736	  10904	   2a98	RCBot_Receiver.elf
+Finished building: default.size.stdout
+ 
+02:25:02 **** Incremental Build of configuration Debug for project RCBot ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RCBot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ariha\STM32CubeIDE\workspace_1.16.1\RCBot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RCBot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RCBot.elf
+ 
+arm-none-eabi-size  RCBot.elf 
+arm-none-eabi-objdump -h -S RCBot.elf  > "RCBot.list"
+   text	   data	    bss	    dec	    hex	filename
+  12132	    112	   2080	  14324	   37f4	RCBot.elf
+Finished building: default.size.stdout
+ 
+Finished building: RCBot.list
+ 
+02:25:15 **** Incremental Build of configuration Debug for project RCBot_Receiver ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RCBot_Receiver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ariha\STM32CubeIDE\workspace_1.16.1\RCBot_Receiver\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RCBot_Receiver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RCBot_Receiver.elf
+ 
+arm-none-eabi-size  RCBot_Receiver.elf 
+arm-none-eabi-objdump -h -S RCBot_Receiver.elf  > "RCBot_Receiver.list"
+   text	   data	    bss	    dec	    hex	filename
+  12132	    112	   2080	  14324	   37f4	RCBot_Receiver.elf
+Finished building: default.size.stdout
+ 
+Finished building: RCBot_Receiver.list
+ 
+02:30:35 **** Incremental Build of configuration Debug for project RCBot_Receiver ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RCBot_Receiver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ariha\STM32CubeIDE\workspace_1.16.1\RCBot_Receiver\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RCBot_Receiver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RCBot_Receiver.elf
+ 
+arm-none-eabi-size  RCBot_Receiver.elf 
+arm-none-eabi-objdump -h -S RCBot_Receiver.elf  > "RCBot_Receiver.list"
+   text	   data	    bss	    dec	    hex	filename
+  12112	    112	   2080	  14304	   37e0	RCBot_Receiver.elf
+Finished building: default.size.stdout
+ 
+Finished building: RCBot_Receiver.list
+ 
+02:30:49 **** Incremental Build of configuration Debug for project RCBot ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RCBot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ariha\STM32CubeIDE\workspace_1.16.1\RCBot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RCBot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RCBot.elf
+ 
+arm-none-eabi-size  RCBot.elf 
+arm-none-eabi-objdump -h -S RCBot.elf  > "RCBot.list"
+   text	   data	    bss	    dec	    hex	filename
+  12112	    112	   2080	  14304	   37e0	RCBot.elf
+Finished building: default.size.stdout
+ 
+Finished building: RCBot.list
+ 
+02:31:01 **** Incremental Build of configuration Debug for project RCBot_Receiver ****
+make -j24 all 
+arm-none-eabi-size  RCBot_Receiver.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12112	    112	   2080	  14304	   37e0	RCBot_Receiver.elf
+Finished building: default.size.stdout
+ 
+02:37:58 **** Incremental Build of configuration Debug for project RCBot_Receiver ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RCBot_Receiver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ariha\STM32CubeIDE\workspace_1.16.1\RCBot_Receiver\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RCBot_Receiver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RCBot_Receiver.elf
+ 
+arm-none-eabi-size  RCBot_Receiver.elf 
+arm-none-eabi-objdump -h -S RCBot_Receiver.elf  > "RCBot_Receiver.list"
+   text	   data	    bss	    dec	    hex	filename
+  12264	    116	   2076	  14456	   3878	RCBot_Receiver.elf
+Finished building: default.size.stdout
+ 
+Finished building: RCBot_Receiver.list
+ 
+02:38:10 **** Incremental Build of configuration Debug for project RCBot ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RCBot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ariha\STM32CubeIDE\workspace_1.16.1\RCBot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RCBot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RCBot.elf
+ 
+arm-none-eabi-size  RCBot.elf 
+arm-none-eabi-objdump -h -S RCBot.elf  > "RCBot.list"
+   text	   data	    bss	    dec	    hex	filename
+  12264	    116	   2076	  14456	   3878	RCBot.elf
+Finished building: default.size.stdout
+ 
+Finished building: RCBot.list
+ 
+02:42:47 **** Incremental Build of configuration Debug for project RCBot_Receiver ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RCBot_Receiver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ariha\STM32CubeIDE\workspace_1.16.1\RCBot_Receiver\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RCBot_Receiver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RCBot_Receiver.elf
+ 
+arm-none-eabi-size  RCBot_Receiver.elf 
+arm-none-eabi-objdump -h -S RCBot_Receiver.elf  > "RCBot_Receiver.list"
+   text	   data	    bss	    dec	    hex	filename
+   9336	     32	   1720	  11088	   2b50	RCBot_Receiver.elf
+Finished building: default.size.stdout
+ 
+Finished building: RCBot_Receiver.list
+ 
+02:43:06 **** Incremental Build of configuration Debug for project RCBot ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RCBot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ariha\STM32CubeIDE\workspace_1.16.1\RCBot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RCBot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RCBot.elf
+ 
+arm-none-eabi-size  RCBot.elf 
+arm-none-eabi-objdump -h -S RCBot.elf  > "RCBot.list"
+   text	   data	    bss	    dec	    hex	filename
+   9336	     32	   1720	  11088	   2b50	RCBot.elf
+Finished building: default.size.stdout
+ 
+Finished building: RCBot.list
+ 
+02:46:03 **** Incremental Build of configuration Debug for project RCBot_Receiver ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RCBot_Receiver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ariha\STM32CubeIDE\workspace_1.16.1\RCBot_Receiver\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RCBot_Receiver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RCBot_Receiver.elf
+ 
+arm-none-eabi-size  RCBot_Receiver.elf 
+arm-none-eabi-objdump -h -S RCBot_Receiver.elf  > "RCBot_Receiver.list"
+   text	   data	    bss	    dec	    hex	filename
+   8740	     12	   1716	  10468	   28e4	RCBot_Receiver.elf
+Finished building: default.size.stdout
+ 
+Finished building: RCBot_Receiver.list
+ 
+02:46:15 **** Incremental Build of configuration Debug for project RCBot ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RCBot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Ariha\STM32CubeIDE\workspace_1.16.1\RCBot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RCBot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RCBot.elf
+ 
+arm-none-eabi-size  RCBot.elf 
+arm-none-eabi-objdump -h -S RCBot.elf  > "RCBot.list"
+   text	   data	    bss	    dec	    hex	filename
+   8740	     12	   1716	  10468	   28e4	RCBot.elf
+Finished building: default.size.stdout
+ 
+Finished building: RCBot.list
+ 

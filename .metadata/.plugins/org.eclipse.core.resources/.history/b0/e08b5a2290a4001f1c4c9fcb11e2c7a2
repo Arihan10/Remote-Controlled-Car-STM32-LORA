@@ -1,0 +1,54 @@
+extern "C" {
+    #include "main.h"
+    extern void MX_GPIO_Init(void);
+    extern void SystemClock_Config(void);
+    extern UART_HandleTypeDef huart2;  // This should be defined in main.c
+}
+
+// Function prototypes
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_UART2_Init(void);
+
+int main(void)
+{
+    // Initialize HAL
+    HAL_Init();
+
+    // Configure system clock
+    SystemClock_Config();
+
+    // Initialize peripherals
+    MX_GPIO_Init();
+    MX_UART2_Init();
+
+    // Data to transmit
+    uint8_t txData[] = "Hello from transmitter!\r\n";
+
+    while (1)
+    {
+        // Transmit data
+        HAL_UART_Transmit(&huart2, txData, sizeof(txData)-1, HAL_MAX_DELAY);
+
+        // Wait before sending next message
+        HAL_Delay(1000);  // 1 second delay
+    }
+}
+
+// UART initialization
+static void MX_UART2_Init(void)
+{
+    huart2.Instance = USART2;
+    huart2.Init.BaudRate = 9600;
+    huart2.Init.WordLength = UART_WORDLENGTH_8B;
+    huart2.Init.StopBits = UART_STOPBITS_1;
+    huart2.Init.Parity = UART_PARITY_NONE;
+    huart2.Init.Mode = UART_MODE_TX;
+    huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+    huart2.Init.OverSampling = UART_OVERSAMPLING_16;
+
+    if (HAL_UART_Init(&huart2) != HAL_OK)
+    {
+        Error_Handler();
+    }
+}
